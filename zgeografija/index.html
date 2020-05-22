@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Zanimljiv geografija</h1>
+
+    </div>
+
+    <div class="first section">
+        <!-- Potvrda korisnika -->
+        <form>
+            <input type="text" name="username"  placeholder="Unesite korisničko ime">
+            <br><br>
+            <input type="submit" value="Potvrdite" name="submit">
+        </form>
+        <br><br><br><br>
+
+    </div>
+
+
+    <div class="adding section">
+        <!-- Dodavanje pojma -->
+
+        <h3>Dodajte pojam</h3>
+        <form>
+            
+            <select name="kategorija" id="kategorija">
+                <option value="Država">Država</option>
+                <option value="Grad">Grad</option>
+                <option value="Reka">Reka</option>
+                <option value="Životinja">Životinja</option>
+                <option value="Biljka">Biljka</option>
+                <option value="Predmet">Predmet</option>
+            </select>
+
+            <input type="text" placeholder="Unesite pojam">
+            <br><br>
+            <input type="submit" value="Potvrdite" name="submit">
+
+        </form>
+
+    </div>
+
+    <footer>
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBi20hFGsUuhOBx64VAq_JByiPTxG9Jzyc",
+            authDomain: "zgeografija-e97e2.firebaseapp.com",
+            databaseURL: "https://zgeografija-e97e2.firebaseio.com",
+            projectId: "zgeografija-e97e2",
+            storageBucket: "zgeografija-e97e2.appspot.com",
+            messagingSenderId: "204189667849",
+            appId: "1:204189667849:web:e06f583b0f0010aac21ed8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+        </script>
+        <script src="app.js" type="module"></script>
+    </footer>
+</body>
+</html>
